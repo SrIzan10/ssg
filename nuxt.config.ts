@@ -8,13 +8,6 @@ export default defineNuxtConfig({
     preference: 'dark',
     classSuffix: '',
   },
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-      routes: ['/', '/robots.txt'],
-      ignore: ['/reveal'],
-    },
-  },
   routeRules: {
     '/**': { cache: { maxAge: 60 * 10 } },
   },
